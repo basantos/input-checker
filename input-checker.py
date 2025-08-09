@@ -24,9 +24,7 @@ def clear_txt():
 
 if __name__ == '__main__':
     while True:
-        time.sleep(2)
         data = get_data()
-        print(data)
         if len(data) != 2:
             continue
         else:
@@ -34,3 +32,4 @@ if __name__ == '__main__':
             send_data(percentage)
             time.sleep(5)
             clear_txt()
+        time.sleep(2)
